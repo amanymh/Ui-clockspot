@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title></title>
+<style>
+/* The Modal (background) */
+.mx {
+    display: none; /* Hidden by default */
+     position: fixed; /* Stay in place */
+    z-index: 111111; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+       background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.mx-con {
+ position: fixed;
+    top: 50%;
+    margin-left: 406px;
+        background-color: #f7f3f3;
+    width: 30%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+     max-width: 30%;
+}
+
+/* The Close Button */
+.clox {
+   color: #333333;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.clox:hover,
+.clox:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mx-header {
+    padding: 2px 16px;
+
+    color: white;
+}
+
+.mlx-body {padding: 12px 26px;}
+
+.mx-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+                          /* side nav */
+/* Add Animation */
+ .sidenavg2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+   background-color: rgba(250,252,254,.94);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenavg2 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenavg2 a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenavg2 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+  <div id="mySidenavg2" class="sidenavg2">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNavigate2()">&times;</a>
+   <h2 style="color: #333333" style="font-size: 22px;">End Shift </h2>
+         <hr style=" margin: 5px;"/>
+          <h2 class="app-form-field-title"  style="font-size: 22px;">in and out time</h2>
+
+            <div class="form-group">
+                <div class="form-group" id="data_6">
+
+                                                <div class="input-daterange input-group" id="datepicker">
+
+                                                    <input type="text" class="input-sm form-control" name="start"  value="in-time"/>
+
+                                                    <input type="text" class="input-sm form-control" name="end" style="margin-top: 9px;" value="out-time" />
+                                                </div>
+                                            </div>
+              </div>
+
+                  <div class="form-group">
+                  <label>Work Report</label>
+                  <textarea cols="6" rows="4" class="form-control"></textarea>
+                  </div>
+
+
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNavigate2()">open</span>
+
+
+
+
+
+<h2>Bottom Modal</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="mx-Btn">Open Modal</button>
+
+
+<!-- The Modal -->
+<div id="mx-Modal" class="mx">
+
+  <!-- Modal content -->
+  <div class="mx-con">
+    <div class="mx-header">
+      <span class="clox">&times;</span>
+
+
+    </div>
+    <div class="mlx-body">
+    <p>this will delete user.name shift ,including all jobs clockedunder it ,You can undo this later</p>
+
+      <button class="btn btn-danger">Delete shift</button>
+      <button class="btn btn-default" style="margin-left: 20px;">Cancel</button>
+    </div>
+    <!--<div class="mx-footer">
+      <h3>Modal Footer</h3>
+    </div>-->
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var mx = document.getElementById('mx-Modal');
+
+// Get the button that opens the modal
+var bx = document.getElementById("mx-Btn");
+
+
+// Get the <span> element that closes the modal
+var sx = document.getElementsByClassName("clox")[0];
+
+// When the user clicks the button, open the modal
+bx.onclick = function() {
+    mx.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+sx.onclick = function() {
+    mx.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == mx) {
+        mx.style.display = "none";
+    }
+}
+
+
+function openNavigate2() {
+    document.getElementById("mySidenavg2").style.width = "300px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNavigate2() {
+    document.getElementById("mySidenavg2").style.width = "0";
+}
+</script>
+
+</body>
+
+</html>

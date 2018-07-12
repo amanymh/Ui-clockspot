@@ -1,0 +1,1054 @@
+.side-menu {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 195px;
+    max-height: 100vh;
+    overflow: auto;
+    background-color: #24282c;
+    border-right: 1px solid #000;
+    z-index: 21;
+}
+.app-menu-header .logo {
+    display: inline-block;
+    width: 109px;
+    height: 32px;
+    background-size: 109px 32px;
+    background-image: url(img/logo-white.svg);
+    margin-top: 16px;
+    opacity: .95;
+    font-size: 23px;
+    color: white;
+}
+
+
+.app-menu-header .logo:hover {
+    opacity: 1;
+}
+.app-menu-group .page {
+    display: block;
+    padding: 9px 0 9px 25px;
+    color: #999;
+    letter-spacing: normal;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #000;
+}
+ .app-menu-header {
+    height: 60px;
+    background-color: #24282c;
+    margin-bottom: 42px;
+    text-align: center;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0), 0 1px 0 rgba(255,255,255,.05);
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: #999;
+   padding: 9px 0 9px 25px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+   background-color: rgba(0,0,0,.25);
+    color: #ccc;
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color: #000000;
+    color:  #FFFFFF;
+}
+
+/* Style the tab content */
+.tabcontent {
+   overflow: auto;
+    z-index: 0;
+     margin-top: 60px;
+    background-color: #eef1f4;
+    background-image: url(//d1c3xulxiz52hg.cloudfront.net/assets/img/bg/noise1-247a2e4deb37857996c4a89e9af6dee7.png);
+    margin-left: 196px;
+    padding-top: 60px;
+    min-height: calc(100vh - 60px);
+    max-height: calc(100vh - 60px);
+
+}
+.app-content-header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(250,252,254,.94);
+    border-bottom: 1px solid rgba(0,0,0,.17);
+    box-shadow: 0 0 2px rgba(0,0,0,.07);
+    text-shadow: 0 1px 0 #fff;
+    width: calc(100% - 196px);
+    height: 60px;
+}
+.app-content-body {
+    margin: 42px 40px;
+    }
+   app-section {
+    z-index: 0;
+    background-color: #f8fafc;
+    position: relative;
+    text-shadow: 0 1px 0 #fff;
+    border: 1px solid #d7d7d7;
+    border-radius: 2px;
+    box-shadow: 3px 3px 4px rgba(0,0,0,.015);
+    padding: 30px 0;
+}
+.centered {
+    text-align: center;
+}
+.route-wrapper.time-clock .app-section {
+    padding: 80px 0;}
+
+ .route-wrapper.time-clock .current-time {
+    display: inline-block;
+    padding: 0 25px 25px;
+    font-size: 24px;
+    color: rgba(0,0,0,.35);
+    margin-bottom: 32px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.route-wrapper.time-clock .greeting {
+    font-size: 32px;
+    color: #505050;
+    margin-bottom: 12px;
+}
+ .route-wrapper.time-clock button.start-shift {
+    padding: 16px 50px 15px;
+    font-size: 20px;
+}
+
+button.app-button-green-1 {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #05a905;
+    border: none;
+    padding: 7px 14px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.25), inset 0 -1px 0 rgba(0,0,0,.24), 0 1px 3px rgba(0,0,0,.2);
+    background-image: linear-gradient(to bottom,transparent,rgba(0,0,0,.13));
+}
+button.app-button-green-1, button.app-button-red-1 {
+    text-decoration: none;
+    line-height: normal;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    font-family: proxima-nova,sans-serif;
+    outline: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+ .route-wrapper.time-clock .switch-jobs {
+    color: rgba(0,0,0,.4);
+    margin-top: 12px;
+}
+                        /* second tab */
+
+ .app-content-header>h1 {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 40px;
+    color: #464646;
+    font-size: 20px;
+    font-weight: 600;
+}
+ .app-content-header h1+.divider {
+    margin-left: 27px;
+}
+.app-content-header>.divider {
+    display: inline-block;
+    height: 30px;
+    width: 1px;
+    background-color: rgba(0,0,0,.1);
+    vertical-align: top;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.app-content-header .filter .selected-item {
+    vertical-align: middle;
+    display: inline-block;
+    color: #4e4e4e;
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 3px;
+    border-bottom: 1px dotted rgba(0,0,0,.2);
+}
+.app-content-header .filter {
+    display: inline;
+}
+.app-content .app-actions {
+    float: right;
+    margin-top: 16px;
+    margin-right: 40px;
+}
+ .app-actions>button {
+    padding: 7px 14px 6px;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #cfcfcf;
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    background-image: linear-gradient(to bottom,#fdfdfd,#ebedef);
+    box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 rgba(255,255,255,.5);
+    color: #505050;
+    font-size: 12px;
+}
+
+.app-actions>button .icon {
+    position: relative;
+    left: -4px;
+    top: -1px;
+    opacity: .65;
+}
+.app-actions>button .icon, .app-bottom-menu .action .icon, .app-content-header>.close::before, .app-data-table-column-header .sort-icon, .app-data-table-header.has-checked-items button.clear-checked .icon, .app-notification .close::before, .input-custom-field button.save .icon, .input-selected-item .edit, .route-wrapper.clock-locations.add .app-right-menu .item .icon, .route-wrapper.clock-locations.clock-location .app-right-menu .item .icon, .route-wrapper.timesheet.clock-time-overlaps .app-right-menu .record .icon, button.app-button-grey-1 .icon {
+    vertical-align: middle;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+
+}
+                       /* popup */
+
+.route-wrapper.timesheet .app-content-header #filter-user .popup-bubble ul {
+    max-height: 503px;
+}
+.popup-bubble ul {
+    color: #666;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 10px 0;
+    text-align: left;
+    max-height: 461px;
+    overflow: auto;
+    line-height: 1em;
+}
+
+ol, ul {
+    list-style: none;
+}
+ .route-wrapper.timesheet .app-content-header #filter-user .popup-bubble li {
+    padding-right: 32px;
+}
+.popup-bubble ul li {
+    padding: 11px 25px 9px;
+    cursor: pointer;
+}
+ .route-wrapper.timesheet .app-content-header #filter-user .popup-bubble li.all-users .icon {
+    background-image: url(img/icons/people-2.svg);
+}
+.route-wrapper.timesheet .app-content-header #filter-user .popup-bubble li .profile-pic {
+    margin-right: 7px;
+    margin-top: -1px;
+}
+.input-user .popup-bubble .search-results .profile-pic, .input-user-multi .popup-bubble .search-results .profile-pic, .profile-pic.size-20 {
+    line-height: 15px;
+}
+.profile-pic {
+    display: inline-block;
+    vertical-align: middle;
+}                       /* end popup */
+
+  .app-group {
+    padding: 30px 0;
+    position: relative;
+}
+ .app-group-name {
+    margin-left: 30px;
+    margin-bottom: 22px;
+    color: #464646;
+    font-size: 13px;
+    font-weight: 600;
+}
+.route-wrapper.timesheet .app-group-item .name {
+    font-size: 13px;
+    width: 190px;
+}
+.route-wrapper.timesheet .app-group-item .date, .route-wrapper.timesheet .app-group-item .duration, .route-wrapper.timesheet .app-group-item .name {
+    display: inline-block;
+}
+.route-wrapper.timesheet .app-group-item .profile-pic {
+    margin-right: 7px;
+    margin-top: -1px;
+}
+.input-user .popup-bubble .search-results .profile-pic, .input-user-multi .popup-bubble .search-results .profile-pic, .profile-pic.size-20 {
+    line-height: 15px;
+}
+.profile-pic {
+    display: inline-block;
+    vertical-align: middle;
+}
+.input-user .popup-bubble .search-results .profile-pic .default-pic, .input-user-multi .popup-bubble .search-results .profile-pic .default-pic, .profile-pic.size-20 .default-pic {
+    width: 20px;
+    height: 17.5px;
+    font-size: 15px;
+    padding-top: 2.5px;
+}
+.profile-pic .default-pic {
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+}
+.profile-pic .default-pic, .profile-pic img {
+    vertical-align: bottom;
+    border-radius: 2px;
+}
+.route-wrapper.timesheet .app-group-item .name .nowrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+ .route-wrapper.timesheet .app-group-item .name .nowrap, .route-wrapper.timesheet .app-group-item.time-entry .job, .route-wrapper.timesheet .app-group-item.time-entry .timesheet-item-type, .route-wrapper.timesheet .app-group-item.time-off .time-off-type, .route-wrapper.timesheet .app-group-item.time-off .timesheet-item-type {
+    width: 150px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.route-wrapper.timesheet .app-group-item.clock-time-row .in, .route-wrapper.timesheet .app-group-item.clock-time-row .out {
+    display: inline-block;
+    word-spacing: 2px;
+    width: 86px;
+    margin-right: 64px;
+}
+.route-wrapper.timesheet .app-group-item .name .nowrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.route-wrapper.timesheet .app-group-item .name .nowrap, .route-wrapper.timesheet .app-group-item.time-entry .job, .route-wrapper.timesheet .app-group-item.time-entry .timesheet-item-type, .route-wrapper.timesheet .app-group-item.time-off .time-off-type, .route-wrapper.timesheet .app-group-item.time-off .timesheet-item-type {
+    width: 150px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+ .route-wrapper.timesheet .app-group-item.clock-time-row .in .icon, .route-wrapper.timesheet .app-group-item.clock-time-row .out .icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+}
+
+.route-wrapper.timesheet .app-group-item.clock-time-row .input-clock-time {
+    margin-left: 7px;
+    position: relative;
+}
+.hover-info .hover-info-tail, .hover-info.is-showing.is-positioned, .input-autocomplete, .input-autocomplete-multi, .input-data-type, .input-datetime, .input-datetime .input-selected-item .day, .input-user, .input-user-multi, .input-wrapper, .live-duration, .log-event mark, .popup-bubble, .popup-bubble .tail {
+    display: inline-block;
+}
+.route-wrapper.timesheet .app-group-item.clock-time-row .input-clock-time .input-selected-item-wrapper {
+    display: inline-block;
+    padding: 10px 11px 8px 8px;
+    margin: -10px -11px -8px -8px;
+}
+.route-wrapper.timesheet .app-group-item.clock-time-row .input-clock-time .input-selected-item {
+    color: #616161;
+    width: auto;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 2px 0 1px;
+    font-size: 12px;
+}
+ .input-selected-item, input[type=email], input[type=password], input[type=text], textarea {
+    letter-spacing: .01em;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: proxima-nova,sans-serif;
+    border: 1px solid #ccc;
+    margin: 0;
+    text-align: left;
+    color: #404040;
+}
+.route-wrapper.timesheet .app-group-item.clock-time-row .in, .route-wrapper.timesheet .app-group-item.clock-time-row .out {
+    display: inline-block;
+    word-spacing: 2px;
+    width: 86px;
+    margin-right: 64px;
+}
+
+.route-wrapper.timesheet .app-group-item.clock-time-row .in, .route-wrapper.timesheet .app-group-item.clock-time-row .out {
+    display: inline-block;
+    word-spacing: 2px;
+    width: 86px;
+    margin-right: 64px;
+}
+
+.route-wrapper.timesheet .app-group-item.clock-time-row .in .icon, .route-wrapper.timesheet .app-group-item.clock-time-row .out .icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+}
+.route-wrapper.timesheet .app-group-item.clock-time-row .input-clock-time {
+    margin-left: 7px;
+    position: relative;
+}
+ .route-wrapper.timesheet .app-group-item.clock-time-row .input-clock-time .input-selected-item-wrapper {
+    display: inline-block;
+    padding: 10px 11px 8px 8px;
+    margin: -10px -11px -8px -8px;
+}
+.route-wrapper.timesheet .app-group-item .date, .route-wrapper.timesheet .app-group-item .duration {
+    width: 150px;
+}
+
+ .app-group-item-actions {
+    display: inline-block;
+    float: right;
+}
+
+.app-group-item:hover {
+    border-top: 1px solid #dbdddf;
+    border-bottom: 1px solid #dbdddf;
+    margin-top: -1px;
+    color: #4d4d4d;
+    background-color: #e9ebed;
+    text-shadow: 0 1px 0 rgba(255,255,255,.71);
+}
+.app-group-item {
+    display: block;
+    font-size: 12px;
+    cursor: pointer;
+    color: #616161;
+    padding: 11px 9px 9px 32px;
+    border-bottom: 1px solid #eceef0;
+}
+.app-group {
+    padding: 30px 0;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                /* third */
+
+
+  .app-section {
+    z-index: 0;
+    background-color: #f8fafc;
+    position: relative;
+    text-shadow: 0 1px 0 #fff;
+    border: 1px solid #d7d7d7;
+    border-radius: 2px;
+    box-shadow: 3px 3px 4px rgba(0,0,0,.015);
+    padding: 30px 0;
+}
+.route-wrapper.reports.index .app-section-title {
+    margin-bottom: 20px;}
+    .route-wrapper.reports.index .app-section>section {
+    padding: 0
+    }
+
+  .app-section.centered .app-subsection:first-of-type {
+    margin-top: 10px;
+}
+
+ .app-section.centered .app-subsection {
+    padding: 31px 5px 25px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: inline-block;
+}
+.route-wrapper.reports.index .app-section>section>a {
+    display: inline-block;
+    width: 350px;
+    text-align: left;
+    cursor: pointer;
+    padding: 40px 10px 40px 30px;
+}
+
+.route-wrapper.reports.index .app-section>section>a .icon {
+    float: left;
+    opacity: .3;
+    margin-right: 20px;
+}
+.route-wrapper.reports.index .app-section>section>a h1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #4d4d4d;
+    margin-bottom: 10px;
+}
+ .route-wrapper.reports.index .app-section>section>a .icon {
+    vertical-align: middle;
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-size: 38px 38px;
+}
+
+.route-wrapper.reports.index .app-section>section>a p {
+    font-size: 14px;
+    color: #616161;
+}
+.app-section.centered .app-subsection:last-of-type {
+    border-bottom: none;
+}
+                               /* 4tab */
+
+ .app-section.no-padding {
+    padding: 0;
+}
+
+.app-data-table-header {
+    padding: 24px 0 22px 30px;
+    border-bottom: 1px solid transparent;
+}
+.app-data-table-header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+}
+.app-data-table-header .filter {
+    display: inline-block;
+    whitespace: nowrap;
+    padding: 12px 14px 12px 18px;
+    margin: -12px -14px -12px -18px;
+    cursor: pointer;
+}
+.app-data-table-header .filter .icon {
+    background-image: url(img/icons/triangle-bottom.svg);
+    opacity: .8;
+    margin-top: -3px;
+}
+
+                             /* 5 tab */
+
+ .app-data-table {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    border-collapse: separate;
+    text-shadow: 0 1px 0 #fff;
+}
+ table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ .app-data-table-cell.check-item, .app-data-table-column-header.check-item {
+    width: .001%;
+    padding-right: 16px;
+}
+
+.app-data-table-cell:first-of-type, .app-data-table-column-header:first-of-type {
+    padding-left: 30px;
+}
+.app-data-table-column-header {
+    color: #464646;
+    border-color: transparent;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.app-data-table-cell, .app-data-table-column-header {
+    border-top: 1px solid #e4e6e8;
+    padding: 12px 14px;
+    line-height: 1.4em;
+    vertical-align: top;
+}
+.hover-info {
+    display: none;
+    position: absolute;
+    z-index: 230;
+    line-height: 1.5em;
+    min-width: 14px;
+    background-color: rgba(0,0,0,.85);
+    padding: 9px 13px 8px;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: .47px;
+    text-shadow: 0 1px 0 #000;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+    color: #f2f2f2;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.app-data-table-cell.check-item label, .app-data-table-column-header.check-item label {
+    display: inline-block;
+    padding: 10px 12px;
+    margin: -10px -12px;
+    border-radius: 100%;
+}
+.app-data-table-cell.check-item input[type=checkbox], .app-data-table-column-header.check-item input[type=checkbox] {
+    margin: 0;
+}
+.app-data-table-row:not(.not-selectable) {
+    cursor: pointer;
+}
+.app-data-table-row:hover .app-data-table-cell {
+    background-color: #f0f2f4;
+    color: #4d4d4d;
+    text-shadow: 0 1px 0 rgba(255,255,255,.71);
+}
+
+.app-data-table-cell, .app-data-table-column-header {
+    border-top: 1px solid #e4e6e8;
+    padding: 12px 14px;
+    line-height: 1.4em;
+    vertical-align: top;
+}
+.app-data-table-actions .action.export .popup-bubble li, .app-data-table-user {
+    white-space: nowrap;
+}
+.app-data-table-user .profile-pic {
+    margin-bottom: -2px;
+    position: relative;
+    top: -2px;
+    margin-right: 4px;
+}
+.profile-pic.size-16 {
+    line-height: 12px;
+}
+ .profile-pic {
+    display: inline-block;
+    vertical-align: middle;
+}
+profile-pic.size-16 .default-pic {
+    width: 16px;
+.    height: 14px;
+    font-size: 12px;
+    padding-top: 2px;
+}
+.profile-pic .default-pic {
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+}
+ .profile-pic .default-pic, .profile-pic img {
+    vertical-align: bottom;
+    border-radius: 2px;
+}
+
+                      /* 6 tab */
+
+  .app-section .app-section-title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 26px;
+    text-align: center;
+}
+ .app-section.centered .app-subsection:first-of-type {
+    margin-top: 10px;
+}
+.app-section.centered .app-subsection {
+    padding: 31px 5px 25px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: inline-block;
+}
+app-section.centered .app-subsection>h1 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    text-align: left;
+    margin-left: 143px;
+    margin-bottom: 20px;
+}
+ .app-section.centered .app-subsection>table {
+    display: inline-block;
+}
+ table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.app-section.centered .app-subsection>table>tr>td:first-of-type {
+    width: 125px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    text-align: right;
+    padding-right: 18px;
+    padding-top: 5px;
+}
+.app-section.stack-inputs .app-subsection>table>tbody>tr>td, .app-section.stack-inputs .app-subsection>table>tr>td {
+    padding-bottom: 0;
+}
+.app-section.centered .app-subsection>table>tbody>tr>td, .app-section.centered .app-subsection>table>tr>td {
+    padding-bottom: 9px;
+    line-height: 1.7em;
+    vertical-align: top;
+}
+ .app-section.centered .app-subsection>table>tbody>tr>td:last-of-type, .app-section.centered .app-subsection>table>tr>td:last-of-type {
+    width: 245px;
+    color: #404040;
+    font-size: 14px;
+    text-align: left;
+}
+.app-section.centered .app-subsection {
+    padding: 31px 5px 25px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: inline-block;
+}
+
+.app-section.centered .app-subsection>h1 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    text-align: left;
+    margin-left: 143px;
+    margin-bottom: 20px;
+}
+.app-section.centered .app-subsection:last-of-type {
+    border-bottom: none;
+}
+.app-section.centered .app-subsection {
+    padding: 31px 5px 25px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: inline-block;
+}
+
+                                                   /* open side menu */
+
+
+    .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+   background-color: rgba(250,252,254,.94);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+
+
+}
+
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+                                       /* model */
+
+   .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+                                    /* footer model */
+   .ml {
+    display: none; /* Hidden by default */
+     position: fixed; /* Stay in place */
+    z-index: 99999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.m-con {
+     position: fixed;
+    bottom: 0;
+    margin-left: 195px;
+    background-color: #fefefe;
+    width: 84%;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+     background-color: rgb(248, 250, 252);
+
+}
+  .m-header {
+    padding: 2px 16px;
+
+    color: white;
+}
+/* The Close Button */
+.clo {
+        color: #7f7676;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.clo:hover,
+.clo:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.ml-body {padding: 18px 30px;
+         display: flex;
+         margin-right: 180px;
+    margin-left: 119px;
+          -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+                                   /* model */
+
+     .mx {
+    display: none; /* Hidden by default */
+     position: fixed; /* Stay in place */
+    z-index: 111111; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+       background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.mx-con {
+ position: fixed;
+    top: 32%;
+     left: 36%;
+        background-color: #f7f3f3;
+    width: 30%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+     max-width: 30%;
+}
+
+/* The Close Button */
+.clox {
+   color: #333333;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.clox:hover,
+.clox:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mx-header {
+    padding: 2px 16px;
+
+    color: white;
+}
+
+.mlx-body {    padding: 40px 26px;
+    margin-left: 32px;
+}
+
+.mx-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+                                /* side nav */
+
+
+    .sidenavg {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+
+   background-color: rgba(250,252,254,.94);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenavg a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenavg a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenavg .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenavg {padding-top: 15px;}
+    .sidenavg a {font-size: 18px;}
+}
+
+
+                           /* model */
+.sidenavg2 {
+    height: 80%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    right: 0;
+   background-color: rgba(250,252,254,.94);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenavg2 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenavg2 a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenavg2 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenavg2 {padding-top: 15px;}
+    .sidenavg2 a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+
+
